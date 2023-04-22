@@ -1,9 +1,8 @@
 .login__input-error_first {
-  position: absolute;
-  top: 180px;
-  left: 36px;
-  line-height: 15px;
-  font-size: 12px;
+  margin-top: 6px;
+  margin-bottom: 12px;
+  line-height: 12px;
+  font-size: 10px;
   color: #FF0000;
 }
 
