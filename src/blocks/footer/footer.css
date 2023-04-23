@@ -1,7 +1,28 @@
 .footer {
-  max-width: 880px;
+  max-width: 1280px;
+  max-height: 172px;
   width: 100%;
-  margin: 67px auto 0;
+  line-height: 16px;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.footer__title {
+  max-width: 1140px;
+  margin-top: 79px;
+  margin-bottom: 7px;
+  padding: 0 0 20px 0;
+  border: none;
+  border-bottom: 2px solid #E8E8E8;
+  color: #A0A0A0;
+  font-weight: 400;
+  text-align: center;
+}
+
+.footer__container {
+  max-width: 1140px;
+  display: flex;
+  justify-content: space-between;
 }
 
 @media screen and (max-width:950px) {
