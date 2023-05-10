@@ -1,40 +1,60 @@
-export default function Login {
+import { Link, NavLink } from 'react-router-dom';
+import './Login.css';
+import shield from '../../images/shield.svg';
+import Header from '../Header/Header';
+import acc from '../../images/acc.svg';
 
-    return (
+export default function Login() {
+  return (
+    <>
+      <Header>
+        <NavLink className="header__nav">Фильмы</NavLink>
+        <NavLink className="header__nav">Сохраненные фильмы</NavLink>
+        <NavLink className="header__nav">
+          <img src={acc} alt="account" className="header__acc" />
+        </NavLink>
+      </Header>
       <div className="login">
         <div className="login__container">
-          <h2 className="login__title">Вход</h2>
-          <form className="login__form" onSubmit={handleSubmit}>
+          <img className="login__logo" src={shield} alt="icon" />
+          <h2 className="login__title">Рады видеть!</h2>
+          <form className="login__form">
+            <h3 className="login__input-title">E-mail</h3>
             <input
               className="login__input login__input_field_name"
               type="email"
               name="email"
-              placeholder="Email"
               required
               minLength="2"
               maxLength="40"
-              value={formValue.email || ""}
-              onChange={handleChange}
             />
-            <span className="login__input-error login__input-error_first"></span>
+            <div className="login__input-error login__input-error_first">
+              <span>ggg</span>
+            </div>
+            <h3 className="login__input-title">Пароль</h3>
             <input
               className="login__input login__input_field_job"
               type="password"
               name="password"
-              placeholder="Пароль"
               required
               minLength="2"
               maxLength="200"
-              value={formValue.password || ""}
-              onChange={handleChange}
             />
-            <span className="login__input-error login__input-error_second"></span>
-            <button className="login__save-button" type="submit" onSubmit={handleSubmit}>
+            <div className="login__input-error login__input-error_first">
+              <span>ggg</span>
+            </div>
+            <button className="login__save-button" type="submit">
               Войти
             </button>
           </form>
+          <div className="login__register-container">
+            <p>Еще не зарегистрированы?</p>
+            <Link className="login__register-link" to="/signin">
+              Регистрация
+            </Link>
+          </div>
         </div>
       </div>
-    );
-  }
-  
+    </>
+  );
+}

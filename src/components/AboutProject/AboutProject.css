@@ -1,0 +1,130 @@
+.aboutProject {
+    max-height: 608px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.aboutProject__title {
+    margin: 110px auto 70px;
+    max-width: 1140px;
+    width: 100%;
+    line-height: 27px;
+    font-size: 22px;
+    font-weight: 400;
+    padding-bottom: 23px;
+    color: rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid #000000;
+}
+
+.aboutProject__container {
+    margin: 0 auto 110px;
+    max-width: 1140px;
+    display: grid;
+    grid-template-columns: minmax(319px, 550px) minmax(319px, 550px);
+    grid-template-rows: 24px 40px;
+    row-gap: 26px;
+    column-gap: 40px;
+}
+
+.aboutProject__subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.04em;
+}
+
+.aboutProject__description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.aboutProject__timeline {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto 110px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 36px 17px;
+    row-gap: 14px;
+    text-align: center;
+    align-items: center;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.aboutProject__line-one {
+    background-color: #2BE080;
+    padding: 9px;
+}
+
+.aboutProject__line-two {
+    background-color: #F2F2F2;
+    padding: 9px;
+}
+
+.aboutProject__line-three {
+    color: #A0A0A0;
+}
+
+@media screen and (max-width:1240px) {
+
+    .aboutProject {
+        padding: 0 50px 0;
+    }
+
+    .aboutProject__title {
+        letter-spacing: -0.04em;
+        color:#000000
+    }
+
+    .aboutProject__description {
+        line-height: 18px;
+        font-size: 12px;
+    }
+
+    .aboutProject__container {
+        column-gap: 30px;
+    }
+} 
+
+@media screen and (max-width:750px) {
+
+    .aboutProject__title {
+        margin:70px 0 60px;
+        padding-bottom: 28px;
+    }
+
+    .aboutProject {
+        padding: 0 18px 0;
+    }
+
+    .aboutProject__container {
+        grid-template-columns: minmax(284px, 700px);
+        grid-template-rows: 44px 48px 44px 48px;
+        margin-bottom: 60px;
+    }
+
+    .one {
+        order:1
+    }
+
+    .two {
+        order: 3;
+    }
+
+    .three {
+        order: 2;
+    }
+
+    .four {
+        order: 4;
+    }
+
+    .aboutProject__timeline {
+        font-size: 11px;
+        line-height: 13px;
+        margin-bottom: 70px;
+    }
+}

@@ -9,8 +9,7 @@
 
 .footer__title {
   max-width: 1140px;
-  margin-top: 79px;
-  margin-bottom: 7px;
+  margin: 79px auto 7px;
   padding: 0 0 20px 0;
   border: none;
   border-bottom: 2px solid #E8E8E8;
@@ -23,6 +22,8 @@
   max-width: 1140px;
   display: flex;
   justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (max-width:950px) {
