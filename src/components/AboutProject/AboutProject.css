@@ -126,5 +126,6 @@
         font-size: 11px;
         line-height: 13px;
         margin-bottom: 70px;
+        grid-template-columns: minmax(100px, 1fr) minmax(184px, 4fr);
     }
 }

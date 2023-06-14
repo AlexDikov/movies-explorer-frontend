@@ -2,7 +2,7 @@ import photo from '../../images/photo.jpg';
 
 export default function AboutMe() {
   return (
-    <div className="aboutMe">
+    <section className="aboutMe">
       <h3 className="aboutMe__header">Студент</h3>
       <div className="aboutMe__container">
         <div className="aboutMe__info">
@@ -18,6 +18,6 @@ export default function AboutMe() {
         </div>
         <img className="aboutMe__photo" src={photo} alt="" />
       </div>
-    </div>
+    </section>
   );
 }

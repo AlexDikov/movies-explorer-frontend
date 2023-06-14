@@ -1,20 +1,13 @@
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import '../Login/Login.css';
 import shield from '../../images/shield.svg';
-import acc from '../../images/acc.svg';
 import Header from '../Header/Header';
 
 export default function Register() {
   return (
     <>
-      <Header>
-        <NavLink className="header__nav">Фильмы</NavLink>
-        <NavLink className="header__nav">Сохраненные фильмы</NavLink>
-        <NavLink className="header__nav">
-          <img src={acc} alt="account" className="header__acc" />
-        </NavLink>
-      </Header>
-      <div className="login">
+      <Header />
+      <section className="login">
         <div className="login__container">
           <img className="login__logo" src={shield} alt="icon" />
           <h2 className="login__title">Добро пожаловать!</h2>
@@ -66,7 +59,7 @@ export default function Register() {
             </Link>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }

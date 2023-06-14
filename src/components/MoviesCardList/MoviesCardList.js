@@ -3,8 +3,8 @@ import './MoviesCardList.css';
 
 export default function MoviesCardList() {
   return (
-    <div className="moviesCardList">
-      <div className="moviesCardList__container">
+    <section className="moviesCardList">
+      <ul className="moviesCardList__container">
         <MoviesCard ok="true" />
         <MoviesCard />
         <MoviesCard />
@@ -17,8 +17,8 @@ export default function MoviesCardList() {
         <MoviesCard />
         <MoviesCard />
         <MoviesCard />
-      </div>
+      </ul>
       <button className="moviesCardList__more">Ещё</button>
-    </div>
+    </section>
   );
 }

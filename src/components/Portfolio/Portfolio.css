@@ -17,19 +17,14 @@
 }
 
 .portfolio__container {
-    max-width: 1140px;
-    width: 100%;
+    
     display: flex;
     justify-content: space-between;
     padding-bottom: 13px;
     border-bottom: 1px solid #E8E8E8;
     margin-bottom: 20px;
-}
-
-.portfolio__container:last-of-type{
-    border-bottom: none;
-    margin-bottom: 125px;
-    padding: 0;
+    text-decoration: none;
+    color: #000000;
 }
 
 .portfolio__link {
@@ -46,6 +41,22 @@
     height: 60px;
     width: 29px;
 }
+
+.portfolio__list {
+    max-width: 1140px;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.portfolio__container_last {
+    border-bottom: none;
+    margin-bottom: 125px;
+    padding: 0;
+}
+
+
 
 @media screen and (max-width:1240px) {
 

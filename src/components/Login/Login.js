@@ -2,19 +2,12 @@ import { Link, NavLink } from 'react-router-dom';
 import './Login.css';
 import shield from '../../images/shield.svg';
 import Header from '../Header/Header';
-import acc from '../../images/acc.svg';
 
 export default function Login() {
   return (
     <>
-      <Header>
-        <NavLink className="header__nav">Фильмы</NavLink>
-        <NavLink className="header__nav">Сохраненные фильмы</NavLink>
-        <NavLink className="header__nav">
-          <img src={acc} alt="account" className="header__acc" />
-        </NavLink>
-      </Header>
-      <div className="login">
+      <Header />
+      <section className="login">
         <div className="login__container">
           <img className="login__logo" src={shield} alt="icon" />
           <h2 className="login__title">Рады видеть!</h2>
@@ -49,12 +42,12 @@ export default function Login() {
           </form>
           <div className="login__register-container">
             <p>Еще не зарегистрированы?</p>
-            <Link className="login__register-link" to="/signin">
+            <Link className="login__register-link" to="/signup">
               Регистрация
             </Link>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }

@@ -1,6 +1,6 @@
 .moviesCard {
-    height: 319px;
-    width: 360px;
+    max-height: 319px;
+    max-width: 360px;
     border-radius: 6px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     align-items: center;
@@ -52,4 +52,29 @@
 
 .moviesCard__btn_active {
     background-image: url(../../images/save_btn_ok.svg);
+}
+
+@media screen and (max-width:1240px) {
+    .moviesCard__img {
+        height: 190px;
+    }
+
+    .moviesCard__btn {
+        margin: 15px 0 0 121px;
+    }
+
+}
+
+@media screen and (max-width:800px) {
+    .moviesCard__img {
+        height: 168px;
+    }
+
+    .moviesCard__btn {
+        margin: 10px 0 0 100px;
+    }
+
+    .moviesCard__container {
+        margin: 14px;
+    }
 }

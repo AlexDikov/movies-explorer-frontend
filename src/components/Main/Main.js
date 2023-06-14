@@ -15,8 +15,12 @@ export default function Main() {
   return (
     <>
       <Header onBack={color}>
-        <NavLink className="header__register">Регистрация</NavLink>
-        <NavLink className="header__login">Войти</NavLink>
+        <NavLink to="/signup" className="header__register">
+          Регистрация
+        </NavLink>
+        <NavLink to="/signin" className="header__login">
+          Войти
+        </NavLink>
       </Header>
       <Promo />
       <NavTab />

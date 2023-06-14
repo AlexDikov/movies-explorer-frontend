@@ -62,6 +62,17 @@
     font-weight: 500;
     text-decoration: none;
     padding: 8px 20px 8px;
+    color: #000000;
+}
+
+.header__menu {
+    height: 44px;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    visibility:hidden
 }
 
 .header__login:hover {
@@ -71,5 +82,38 @@
 @media screen and (max-width:1240px) {
     .header__container {
       padding: 0 50px 0;
+    }
+
+    .header__nav {
+        visibility: hidden;
+    }
+
+    .header__menu {
+        visibility: visible;
+    }
+
+    .header__menu:hover {
+        opacity: 0.7;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .header__container {
+        padding: 0 14px 0;
+    }
+
+    .header__register {
+        font-size: 10px;
+    }
+
+    .header__login {
+        font-size: 10px;
+        padding: 5px 12px 5px;
+    }
+
+    .header__menu {
+        height: 43px;
+        width: 40px;
     }
 }
