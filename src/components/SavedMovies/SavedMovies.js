@@ -6,6 +6,7 @@ import MoviesCardList from '../MoviesCardList/MoviesCardList';
 import Preloader from '../Preloader/Preloader';
 import SearchForm from '../SearchForm/SearchForm';
 import acc from '../../images/acc.svg';
+import menu from '../../images/menu.svg';
 
 export default function SavedMovies() {
   return (
@@ -20,6 +21,9 @@ export default function SavedMovies() {
         <NavLink to="/profile" className="header__nav">
           <img className="header__acc" alt="icon" src={acc} />
         </NavLink>
+        <button className="header__menu">
+          <img src={menu} alt="menu" />
+        </button>
       </Header>
       <main>
         <SearchForm />
