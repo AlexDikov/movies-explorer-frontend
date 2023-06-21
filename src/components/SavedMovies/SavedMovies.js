@@ -21,11 +21,13 @@ export default function SavedMovies() {
           <img className="header__acc" alt="icon" src={acc} />
         </NavLink>
       </Header>
-      <SearchForm />
-      <Preloader />
-      <MoviesCardList>
-        <MoviesCard />
-      </MoviesCardList>
+      <main>
+        <SearchForm />
+        <Preloader />
+        <MoviesCardList>
+          <MoviesCard />
+        </MoviesCardList>
+      </main>
       <Footer />
     </>
   );

@@ -33,3 +33,35 @@
     cursor: pointer;
     opacity: 0.5;
 }
+
+@media screen and (max-width:900px) {
+    .notFound__title {
+        margin-top: 408px;
+    }
+
+    .notFound__subtitle {
+        margin-top: 0;
+    }
+
+    .notFound__back {
+        margin-bottom: 222px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .notFound__title {
+        margin-top: 329px;
+        font-size: 80px;
+        line-height: 97px;
+    }
+
+    .notFound__subtitle {
+        margin: 5px 0 284px;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .notFound__back {
+        margin-bottom: 30px;
+    }
+}

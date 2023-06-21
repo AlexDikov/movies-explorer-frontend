@@ -2,6 +2,7 @@ import { NavLink } from 'react-router-dom';
 import Header from '../Header/Header';
 import './Profile.css';
 import acc from '../../images/acc.svg';
+import menu from '../../images/menu.svg';
 
 export default function Profile() {
   return (
@@ -16,6 +17,9 @@ export default function Profile() {
         <NavLink to="/profile" className="header__nav">
           <img className="header__acc" alt="icon" src={acc} />
         </NavLink>
+        <button className="header__menu">
+          <img src={menu} alt="menu" />
+        </button>
       </Header>
       <section className="profile">
         <h2 className="profile__title">Привет, Валенок!</h2>

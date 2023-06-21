@@ -16,6 +16,7 @@
     row-gap: 30px;
     padding: 0;
     justify-content: center;
+    list-style: none;
 }
 
 .moviesCardList__more {

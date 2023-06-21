@@ -62,4 +62,52 @@ align-items: center;
 .profile__signout-btn:hover {
     cursor: pointer;
     opacity: 0.5;
+}
+
+@media screen and (max-width:1200px) {
+    .profile__title {
+        margin: 236px auto 0;
     }
+
+    .profile__name {
+        margin-top: 96px; 
+    }
+
+    .profile__edit-btn {
+        margin-top: 210px;
+    }
+
+    .profile__signout-btn {
+        margin-bottom: 269px;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .profile__title {
+        margin-top: 70px;
+    }
+
+    .profile__name {
+        margin-top: 80px; 
+    }
+
+    .profile__name {
+        width: 260px;
+        font-size: 11px;
+        line-height: 13px;
+    }
+
+    .profile__email {
+        width: 260px;
+        font-size: 11px;
+        line-height: 13px;
+    }
+
+    .profile__edit-btn {
+        margin-top: 379px;
+    }
+
+    .profile__signout-btn {
+        margin-bottom: 40px;
+    }
+}

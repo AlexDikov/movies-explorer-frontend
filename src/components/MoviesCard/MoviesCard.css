@@ -1,6 +1,8 @@
 .moviesCard {
     max-height: 319px;
     max-width: 360px;
+    height: 100%;
+    width: 100%;
     border-radius: 6px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     align-items: center;
@@ -9,7 +11,7 @@
 .moviesCard__container {
     display: flex;
     justify-content: space-between;
-    margin: 18px;
+    padding: 18px;
     align-items: center;
 }
 
@@ -75,6 +77,6 @@
     }
 
     .moviesCard__container {
-        margin: 14px;
+        padding: 14px;
     }
 }

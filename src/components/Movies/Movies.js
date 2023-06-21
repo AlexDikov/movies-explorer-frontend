@@ -6,6 +6,7 @@ import Preloader from '../Preloader/Preloader';
 import SearchForm from '../SearchForm/SearchForm';
 import acc from '../../images/acc.svg';
 import menu from '../../images/menu.svg';
+import MenuPopup from '../MenuPopup/MenuPopup';
 
 export default function Movies() {
   return (
@@ -24,10 +25,13 @@ export default function Movies() {
           <img src={menu} alt="menu" />
         </button>
       </Header>
-      <SearchForm />
-      <Preloader />
-      <MoviesCardList />
+      <main>
+        <SearchForm />
+        <Preloader />
+        <MoviesCardList />
+      </main>
       <Footer />
+      <MenuPopup />
     </>
   );
 }

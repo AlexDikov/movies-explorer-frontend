@@ -5,18 +5,42 @@ export default function MoviesCardList() {
   return (
     <section className="moviesCardList">
       <ul className="moviesCardList__container">
-        <MoviesCard ok="true" />
-        <MoviesCard />
-        <MoviesCard />
-        <MoviesCard />
-        <MoviesCard />
-        <MoviesCard />
-        <MoviesCard />
-        <MoviesCard />
-        <MoviesCard />
-        <MoviesCard />
-        <MoviesCard />
-        <MoviesCard />
+        <li>
+          <MoviesCard ok="true" />
+        </li>
+        <li>
+          <MoviesCard />
+        </li>
+        <li>
+          <MoviesCard />
+        </li>
+        <li>
+          <MoviesCard />
+        </li>
+        <li>
+          <MoviesCard />
+        </li>
+        <li>
+          <MoviesCard />
+        </li>
+        <li>
+          <MoviesCard />
+        </li>
+        <li>
+          <MoviesCard />
+        </li>
+        <li>
+          <MoviesCard />
+        </li>
+        <li>
+          <MoviesCard />
+        </li>
+        <li>
+          <MoviesCard />
+        </li>
+        <li>
+          <MoviesCard />
+        </li>
       </ul>
       <button className="moviesCardList__more">Ещё</button>
     </section>

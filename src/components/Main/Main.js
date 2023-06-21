@@ -7,7 +7,6 @@ import NavTab from '../NavTab/NavTab';
 import Portfolio from '../Portfolio/Portfolio';
 import Promo from '../Promo/Promo';
 import Techs from '../Techs/Techs';
-import acc from '../../images/acc.svg';
 
 export default function Main() {
   const color = '#073042';
@@ -22,12 +21,14 @@ export default function Main() {
           Войти
         </NavLink>
       </Header>
-      <Promo />
-      <NavTab />
-      <AboutProject />
-      <Techs />
-      <AboutMe />
-      <Portfolio />
+      <main>
+        <Promo />
+        <NavTab />
+        <AboutProject />
+        <Techs />
+        <AboutMe />
+        <Portfolio />
+      </main>
       <Footer />
     </>
   );

@@ -68,7 +68,7 @@
     margin: 0 29px 0 30px;
     position: absolute;
     top: 16px;
-    right: 226px;
+    right: 236px;
 }
 
 .searchForm__switch[type=checkbox]{
@@ -139,6 +139,7 @@
 
     .searchForm__short {
         font-size: 13px;
+        margin-top: 3px;
     }
 
 
@@ -170,9 +171,17 @@
         max-width: 300px;
     }
 
+    .searchForm__find-btn {
+       right: 19px;
+    }
+
     .searchForm__checkbox {
         top: 120px;
-        left: 50%;
-        right: 50%;
-        }
+        left: 35%;
+    }
+
+    .searchForm__line {
+        visibility: hidden;
+    }
+
 }
