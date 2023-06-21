@@ -1,0 +1,125 @@
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1140px;
+    width: 100%;
+}
+
+.header__icon {
+    height: 38px;
+    margin: 18px 0 18px;
+}
+
+.header__nav {
+    text-decoration: none;
+    margin-left: 20px;
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.header__nav:last-of-type {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.header__acc {
+    height: 32px;
+    width: 100px;
+}
+
+.header__nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+.header__register {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.header__register:hover {
+    opacity: 0.5;
+}
+
+.header__login {
+    margin-left: 30px;
+    background-color: #2BE080;
+    border-radius: 3px;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 8px 20px 8px;
+    color: #000000;
+}
+
+.header__menu {
+    height: 44px;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    visibility:hidden
+}
+
+.header__login:hover {
+    opacity: 0.5;
+}
+
+@media screen and (max-width:1240px) {
+    .header__container {
+      padding: 0 50px 0;
+    }
+
+    .header__nav {
+        visibility: hidden;
+    }
+
+    .header__menu {
+        visibility: visible;
+    }
+
+    .header__menu:hover {
+        opacity: 0.7;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .header__container {
+        padding: 0 14px 0;
+        max-width: 292px;
+    }
+
+    .header__register {
+        font-size: 10px;
+    }
+
+    .header__login {
+        font-size: 10px;
+        padding: 5px 12px 5px;
+    }
+
+    .header__menu {
+        height: 43px;
+        width: 40px;
+    }
+
+    .header__nav-menu {
+        visibility: hidden;
+        overflow: hidden;
+    }
+}
